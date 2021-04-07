@@ -1,0 +1,93 @@
+.button {
+  display: block;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.button span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--colour-lightest);
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.button span:nth-child(1) {
+  top: 0px;
+}
+
+.button span:nth-child(2),
+.button span:nth-child(3) {
+  top: 18px;
+}
+
+.button span:nth-child(4) {
+  top: 36px;
+}
+
+.buttonOpen span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.buttonOpen span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.buttonOpen span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.buttonOpen span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu {
+  padding: 4rem 0 0 0;
+  margin: 0;
+  list-style: none;
+  background-color: var(--body-bg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.25s ease-in-out;
+  transform: translateX(100%);
+}
+
+.menu a {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: var(--font-weight-bolder);
+  font-size: var(--font-size-large);
+  padding: 2rem 1rem;
+  color: var(--colour-dark);
+}
+
+.menu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.menuOpen {
+  transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
+}

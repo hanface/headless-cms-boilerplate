@@ -1,0 +1,29 @@
+.socialContainer {
+  display: none;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 100%;
+  margin: 0 0.2rem;
+  background-color: var(--colour-lightest);
+  color: var(--colour-dark);
+  font-weight: var(--font-weight-bolder);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .socialContainer {
+    display: block;
+    align-self: flex-end;
+  }
+}

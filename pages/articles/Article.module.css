@@ -1,0 +1,26 @@
+.article {
+  padding: 0;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+}
+
+.heading {
+  margin: 0 auto 2rem;
+  max-width: 48rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.heading p {
+  color: var(--colour-light);
+  font-size: var(--font-size-medium);
+}
+
+.image {
+  margin: 0 auto 2rem;
+  width: 100%;
+}
